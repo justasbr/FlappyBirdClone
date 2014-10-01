@@ -17,10 +17,10 @@ public class scoreCounter : MonoBehaviour {
 
 	void UpdateScore(){
 		scoreText.text = score.ToString ();
-		if (score == 3) {
+		/*if (score == 3) {
 			scoreText.text = "OH BABY";
 			audio.Play ();		
-		}
+		}*/
 		if (score > record) {
 			record = score;
 			recordText.text = "Record: " + record.ToString ();
